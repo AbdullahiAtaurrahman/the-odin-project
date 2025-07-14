@@ -1,17 +1,7 @@
 // const myLibrary = [];
 
-// function Book(id, title, author, pages, read) {
-//   // the constructor...
-
-//   this.id = id;
-//   this.title = title;
-//   this.author = author;
-//   this.pages = pages;
-//   this.read = read
-// }
-
 // function addBookToLibrary(id, title, author, pages, read) {
-//   // take params, create a book then store it in the array
+// take params, create a book then store it in the array
 
 //   const newBook = new Book(id, title, author, pages, read);
 //   myLibrary.push(newBook);
@@ -21,10 +11,6 @@
 // addBookToLibrary(crypto.randomUUID(), 'The Hobbit', 'J.R.R. Tolkien', 310, true);
 // addBookToLibrary(crypto.randomUUID(), 'To Kill a Mockingbird', 'Harper Lee', 281, false);
 // addBookToLibrary(crypto.randomUUID(), '1984', 'George Orwell', 328, false);
-// // Example usage: 
-
-
-// // console.log(myLibrary);
 
 // function displayBooks() {
 //   bookList.innerHTML = ''; // Clear the list before displaying
@@ -114,7 +100,4 @@ function addBookToLibrary(title, author, pages, read) {
   const newBook = new Book(title, author, pages, read)
 
 }
-
-
-
 
