@@ -11,10 +11,79 @@ body {
 }
 
 .container {
-    max-width: 100%;
-    height: 100vh;
+    max-width: 850px;
     margin: 10% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+h1,
+p {
+    margin: 8px;
+}
+
+.booklist {
+    margin-bottom: 14px;
+}
+
+.book-item {
+    background-color: black;
+    color: #fff;
+    padding: 12px;
+    display: block;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    display: flex;
+    min-width: 300px;
+}
+
+.fa {
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.fa:hover {
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+button {
+    padding: 6px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-book-button {
+    margin-bottom: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    display: block;
+    margin: 12px;
+    min-width: 300px;
+    padding: 4px;
+    background-color: aliceblue;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btns {
+    margin-top: 12px;
+}
+
+.add {
+    width: 80px;
 }
