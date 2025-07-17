@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Hello</h1>
-    <p>Welcome to the Book Library</p>
-    <div class="book-list"></div>
-
-    <button class="add-book-button">Add Book</button>
-
-
-    <form action="" class="add-book-form">
-        <div class="inputs">
-            <input type="text" id="book-title" placeholder="Enter book title">
-            <input type="text" id="book-author" placeholder="Enter book author">
-            <input type="text" id="book-pages" placeholder="Enter book pages">
-            <input type="text" id="book-read" placeholder="Enter book read">
+    <div class="container">
+        <h1>Hello</h1>
+        <p>Welcome to the Book Library</p>
+        <div class="booklist">
+            <span class="book-item">Enjoy your life by Al-areefy with 452 pages and not read <i class="fa fa-times"
+                    aria-hidden="true"></i> </span>
         </div>
-        <span class="btns">
-            <button type="submit" class="add">Add</button>
-            <button class="cancel">Cancel</button>
-        </span>
-    </form>
+
+        <button class="add-book-button">Add a book</button>
+
+        <form action="" class="add-book-form">
+            <div class="inputs">
+                <input type="text" id="book-title" placeholder="Enter book title">
+                <input type="text" id="book-author" placeholder="Enter book author">
+                <input type="text" id="book-pages" placeholder="Enter book pages">
+                <input type="text" id="book-read" placeholder="Enter if book read">
+            </div>
+            <span class="btns">
+                <button type="submit" class="add">Add</button>
+                <!-- <button class="cancel">Cancel</button> -->
+            </span>
+        </form>
+    </div>
     <script src="./script.js"></script>
 </body>
 

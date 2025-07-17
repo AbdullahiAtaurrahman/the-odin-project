@@ -1,70 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #16161d;
-    color: azure;
-    text-align: center;
+    background-color: rgb(51, 48, 48);
 }
 
-h1,
-p {
-    text-align: center;
-    font-size: 1.46rem;
-    margin: 16px;
-}
-
-button {
-    background-color: #3a3a4a;
-    color: azure;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    scale: 90%;
-}
-
-li {
-    list-style-type: none;
-}
-
-.book-list {
+.container {
+    max-width: 100%;
+    height: 100vh;
+    margin: 10% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.book-item {
-    background-color: #1f1f2e;
-    border: 1px solid #3a3a4a;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-}
-
-.add-book-form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.inputs {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    margin: 6px;
-    width: 40%;
-    align-self: center;
-}
-
-input:focus {
-    outline: none;
-}
-
-.add,
-.cancel {
-    scale: 80%;
 }
