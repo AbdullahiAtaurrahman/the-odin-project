@@ -16,25 +16,20 @@
         <h1>Hello</h1>
         <p>Welcome to the Book Library</p>
         <div class="booklist">
-            <p class="book-item"><span>Enjoy your life by Al-areefy with 452 pages and not read </span> <i
-                    class="fa fa-times" aria-hidden="true"></i> </p>
-            <p class="book-item"><span>Enjoy your life by Al-areefy with 452 pages and not read </span> <i
-                    class="fa fa-times" aria-hidden="true"></i> </p>
-            <p class="book-item"><span>Enjoy your life by Al-areefy with 452 pages and not read </span> <i
-                    class="fa fa-times" aria-hidden="true"></i> </p>
+
         </div>
 
         <button class="add-book-button">Add a book</button>
 
         <form action="" class="add-book-form">
             <div class="inputs">
-                <input type="text" id="book-title" placeholder="Enter book title">
-                <input type="text" id="book-author" placeholder="Enter book author">
-                <input type="text" id="book-pages" placeholder="Enter book pages">
-                <input type="text" id="book-read" placeholder="Enter if book read">
+                <input type="text" id="title" placeholder="Enter book title">
+                <input type="text" id="author" placeholder="Enter book author">
+                <input type="text" id="pages" placeholder="Enter book pages">
+                <input type="text" id="read" placeholder="Enter if book read">
             </div>
             <span class="btns">
-                <button type="submit" class="add">Add</button>
+                <button type="submit" class="add" onclick="saveData()">Add</button>
             </span>
         </form>
     </div>
