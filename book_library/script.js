@@ -39,21 +39,48 @@ function saveData() {
 
     const newBook = new Book(tv, av, pv, rv);
     myLibrary.push(newBook);
-    console.log(newBook);
+    // console.log(newBook);
+    console.log(myLibrary);
+
+    bookList.innerHTML = '';
+
+    title.value = "";
+    read.value = "";
+    author.value = "";
+    pages.value = "";
+
+    renderList()
 
 }
 
 console.log(myLibrary);
 
-myLibrary.map((book) => {
 
-    let bookHtml = `<p class="book-item"><span>${book.title} by ${book.author} with ${book.pages} pages and ${book.read} </span> <i 
-    class="fa fa-times" aria-hidden="true"></i> </p>`;
+function renderList() {
 
-    bookList.innerHTML += bookHtml;
+    myLibrary.map((book, index) => {
 
-})
+        let bookHtml = `<p class="book-item"><span>${book.title} by ${book.author} with ${book.pages} pages and ${book.read} </span> <i 
+    class="fa fa-times data-index=${index} " aria-hidden="true"></i> </p>`;
 
+        bookList.innerHTML += bookHtml;
+
+    });
+
+    bookList.addEventListener("click", function (e) {
+        if (e.target.tagName === "SPAN") {
+            const index = e.target.getAttribute("data-index");
+            items.splice(index, 1); // Remove from array
+            renderList();           // Re-render list
+
+            console.log(e);
+
+        }
+    });
+
+};
 function addBookToLibrary() {
 
 }
+
+renderList();

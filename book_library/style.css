@@ -63,7 +63,7 @@ button {
     margin-bottom: 12px;
 }
 
-form {
+.add-book-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,4 +88,5 @@ input:focus {
 
 .add {
     width: 80px;
+    align-self: center;
 }
